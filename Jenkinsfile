@@ -3,7 +3,7 @@ pipeline{
 
     parameters{
         string(name: "SPEC", defaultValue: "cypress/e2e/**/**", description: "test")
-        choice(name: "BROWSER", choices: ['chrome', 'edge'], descriptiom: "otro test")
+        choice(name: "BROWSER", choices: ['chrome', 'edge'], description: "otro test")
     }
 
     options{
@@ -25,7 +25,9 @@ pipeline{
         }
 
         stage('Deploy'){
-            echo "Deploying"
+            steps{
+                echo "Deploying"
+            }
         }
     }
 
