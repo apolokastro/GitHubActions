@@ -6,6 +6,6 @@ describe('Test Case suite', () => {
 
   it('Test case to fail', () => {
     cy.visit('https://example.cypress.io')
-    cy.contains('Kitchen Sinkxxx')
+    cy.contains('Kitchen Sink')
   })
 })
